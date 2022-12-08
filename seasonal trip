@@ -1,0 +1,36 @@
+import java.util.Scanner;
+  public class weatherreport
+  {
+        public static void main(String[] args)
+        {
+            System.out.println("Hey!!\nI will assist you for your travel to India.");
+            System.out.println("There are 5 seasons in India.\n1. Winter\n2. Spring\n3. Summer\n4. Monsoon\n5. Autumn");
+            System.out.println("Enter the month in which you want to visit India.\nBut make sure to Enter it as a number:");
+            Scanner sc = new Scanner(System.in);
+            int month = sc.nextInt();
+            if((month == 1 )||(month==12))
+                System.out.println("It is a season of Winter.\nMake sure to carry your Woolen and body Warmers. " +
+                        "\nThe temperature can drop down up to 0 degree Celsius in some North part of the Country.");
+            else if ((month == 2)||(month==3)) {
+                System.out.println("It is a season of Spring.\nOne of the best Seasons.\nMake sure to carry your Light woolen clothes." +
+                        "\nThe temperature relies between 15-25 degree Celsius.");
+            }
+            else if ((month == 4)||(month==5)||(month==6)) {
+                System.out.println("It is a season of Summer.\nMake sure to carry your Light clothes as well as cotton clothes." +
+                        "\nThe temperature relies between 30-45(or more in some field areas)degree Celsius." +
+                        "\nBe hydrated all the time if you go in Summers.\nSummers in India are very Exhausting" +
+                        "\nYou can be a Victim of Heat stoke if you don't follow safety precautions.");
+            }
+            else if ((month == 7)||(month ==8)||(month == 9)) {
+                System.out.println("It is a season of Monsoon.\nYou can Carry light cotton clothes as well as umbrella"+
+                        "\n The temperature at that time varies between 25 to 35 degree Celsius but it feels more due to humidity in the atmosphere." );
+            }
+            else if ((month == 10)||(month==11)){
+                System.out.println("This is Autumn.\nPleasant Weather.\nTemperature in these days varies between 20-30 degree Celsius." +
+                        "\nCarry Light cotton with some woolen ones for precaution");
+            }
+            else {
+                System.out.println("ILLEGAL MONTH..!! Please enter 1-12 for me to work.");
+            }
+        }
+  }
